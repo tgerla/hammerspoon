@@ -20,7 +20,6 @@
 }
 
 +(void)loadPrivateFrameworks {
-    [[NSBundle bundleWithPath:@"/System/Library/PrivateFrameworks/CoreBrightness.framework"] load];
     [KeyboardManager.sharedInstance setBrightnessClient:[[NSClassFromString(@"KeyboardBrightnessClient") alloc] init]];
 }
 
